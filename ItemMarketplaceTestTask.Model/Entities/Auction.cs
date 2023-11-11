@@ -14,7 +14,6 @@ namespace ItemMarketplaceTestTask.Model.Entities
         public string Seller { get; set; }
         public string? Buyer { get; set; }
 
-        [JsonIgnore]
         public Item Item { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using ItemMarketplaceTestTask.Service.Interfaces;
+﻿using ItemMarketplaceTestTask.Model.Request;
+using ItemMarketplaceTestTask.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ItemMarketplaceTestTask.WebApi.Controllers
@@ -18,11 +19,11 @@ namespace ItemMarketplaceTestTask.WebApi.Controllers
         }
 
         [HttpGet("auctions")]
-        public async Task<IActionResult> GetAuctionsAsync()
+        public async Task<IActionResult> GetAuctionsAsync([FromQuery] AuctionRequest request)
         {
             _logger.LogDebug($"{nameof(GetAuctionsAsync)} request.");
 
-            var result = await _auctionService.GetAuctionsByFiltersAsync();
+            var result = await _auctionService.GetAuctionsByFiltersAsync(request);
 
             return Ok(result);
         }
