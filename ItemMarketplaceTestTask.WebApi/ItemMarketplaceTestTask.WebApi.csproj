@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MarketplaceTestTask.Infrastructure\ItemMarketplaceTestTask.Infrastructure.csproj" />
+    <ProjectReference Include="..\ItemMarketplaceTestTask.Infrastructure\ItemMarketplaceTestTask.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

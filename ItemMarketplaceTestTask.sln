@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ItemMarketplaceTestTask.Web
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ItemMarketplaceTestTask.Model", "ItemMarketplaceTestTask.Model\ItemMarketplaceTestTask.Model.csproj", "{CADAD6C4-A329-4090-BD0C-B86F7933E8DA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ItemMarketplaceTestTask.Infrastructure", "MarketplaceTestTask.Infrastructure\ItemMarketplaceTestTask.Infrastructure.csproj", "{835002D6-77B8-4B8D-BCB5-287199DC12A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ItemMarketplaceTestTask.Infrastructure", "ItemMarketplaceTestTask.Infrastructure\ItemMarketplaceTestTask.Infrastructure.csproj", "{9AA9EC1B-4409-456B-A601-6B3334EBF210}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{CADAD6C4-A329-4090-BD0C-B86F7933E8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CADAD6C4-A329-4090-BD0C-B86F7933E8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CADAD6C4-A329-4090-BD0C-B86F7933E8DA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{835002D6-77B8-4B8D-BCB5-287199DC12A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{835002D6-77B8-4B8D-BCB5-287199DC12A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{835002D6-77B8-4B8D-BCB5-287199DC12A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{835002D6-77B8-4B8D-BCB5-287199DC12A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AA9EC1B-4409-456B-A601-6B3334EBF210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AA9EC1B-4409-456B-A601-6B3334EBF210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AA9EC1B-4409-456B-A601-6B3334EBF210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AA9EC1B-4409-456B-A601-6B3334EBF210}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
