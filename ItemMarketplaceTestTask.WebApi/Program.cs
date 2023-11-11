@@ -1,7 +1,9 @@
-using ItemMarketplaceTestTask.Infrastructure;
+using ItemMarketplaceTestTask.Infrastructure.Repositories;
+using ItemMarketplaceTestTask.Infrastructure.Repositories.Interfaces;
+using ItemMarketplaceTestTask.Service;
+using ItemMarketplaceTestTask.Service.Interfaces;
 using MarketplaceTestTask.Infrastructure;
 using Microsoft.EntityFrameworkCore;
-using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +16,9 @@ builder.Services.AddSwaggerGen();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(x => x.UseSqlServer(connectionString));
+
+builder.Services.AddScoped<IAuctionRepository, AuctionRepository>();
+builder.Services.AddTransient<IAuctionService, AuctionService>();
 
 var app = builder.Build();
 

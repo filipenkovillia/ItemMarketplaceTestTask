@@ -1,4 +1,4 @@
-﻿namespace ItemMarketplaceTestTask.Model.Enum
+﻿namespace ItemMarketplaceTestTask.Model.Enums
 {
     public enum AuctionStatus
     {
