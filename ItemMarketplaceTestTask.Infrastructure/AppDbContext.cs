@@ -28,5 +28,18 @@ namespace MarketplaceTestTask.Infrastructure
             var connectionString = configuration.GetConnectionString("DefaultConnection");
             optionsBuilder.UseSqlServer(connectionString);
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Item>()
+                .HasIndex(x => x.Name);
+
+            modelBuilder.Entity<Item>()
+                .Property(x => x.Name)
+                .UseCollation("SQL_Latin1_General_CP1_CI_AS");
+
+            modelBuilder.Entity<Auction>()
+                .HasIndex(x => x.Seller);
+        }
     }
 }
