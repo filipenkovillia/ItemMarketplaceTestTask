@@ -26,6 +26,8 @@ namespace ItemMarketplaceTestTask.WebApi.ControllersV1
 
             var result = await _auctionService.GetAuctionsByFiltersAsync(request);
 
+            _logger.LogDebug($"{nameof(GetAuctionsAsync)} returned {result.Count} auctions as a result.");
+
             return Ok(result);
         }
 
