@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Mvc;
 namespace ItemMarketplaceTestTask.WebApi.ControllersV2
 {
     [ApiController]
-    [Route("[controller]")]
     [ApiVersion("2.0")]
     public class AuctionController : ControllerBase
     {
