@@ -19,7 +19,9 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<AppDbContext>(x => x.UseSqlServer(connectionString));
 
 builder.Services.AddScoped<IAuctionRepository, AuctionRepository>();
+builder.Services.AddScoped<IItemRepository, ItemRepository>();
 builder.Services.AddTransient<IAuctionService, AuctionService>();
+builder.Services.AddTransient<ITestingService, TestingService>();
 
 builder.Services.AddApiVersioning(o =>
 {

@@ -2,6 +2,7 @@
 using ItemMarketplaceTestTask.Model.Entities;
 using MarketplaceTestTask.Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace ItemMarketplaceTestTask.Infrastructure.Repositories
 {
@@ -18,6 +19,27 @@ namespace ItemMarketplaceTestTask.Infrastructure.Repositories
         public IQueryable<Auction> GetAll()
         {
             return _dbSet;
+        }
+
+        public Auction Add(Auction auction)
+        {
+            EntityEntry entityEntry = _dbSet.Add(auction);
+            return (Auction)entityEntry.Entity;
+        }
+
+        public async Task AddRangeAsync(List<Auction> auctions)
+        {
+            await _dbSet.AddRangeAsync(auctions);
+        }
+
+        public async Task SaveChangesAsync()
+        {
+            await _dbContext.SaveChangesAsync();
+        }
+
+        public void ClearCache()
+        {
+            _dbContext.ChangeTracker.Clear();
         }
     }
 }
