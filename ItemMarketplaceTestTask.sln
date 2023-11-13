@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ItemMarketplaceTestTask.Mod
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ItemMarketplaceTestTask.Infrastructure", "ItemMarketplaceTestTask.Infrastructure\ItemMarketplaceTestTask.Infrastructure.csproj", "{9AA9EC1B-4409-456B-A601-6B3334EBF210}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemMarketplaceTestTask.Service", "..\ItemMarketplaceTestTask.Service\ItemMarketplaceTestTask.Service.csproj", "{7AD6730F-050C-4063-8A3F-0AC628A002F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ItemMarketplaceTestTask.Service", "ItemMarketplaceTestTask.Service\ItemMarketplaceTestTask.Service.csproj", "{85DA3F36-B9C4-476B-86FC-F116D2966F4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{9AA9EC1B-4409-456B-A601-6B3334EBF210}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AA9EC1B-4409-456B-A601-6B3334EBF210}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AA9EC1B-4409-456B-A601-6B3334EBF210}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7AD6730F-050C-4063-8A3F-0AC628A002F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7AD6730F-050C-4063-8A3F-0AC628A002F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7AD6730F-050C-4063-8A3F-0AC628A002F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7AD6730F-050C-4063-8A3F-0AC628A002F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85DA3F36-B9C4-476B-86FC-F116D2966F4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85DA3F36-B9C4-476B-86FC-F116D2966F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85DA3F36-B9C4-476B-86FC-F116D2966F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85DA3F36-B9C4-476B-86FC-F116D2966F4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

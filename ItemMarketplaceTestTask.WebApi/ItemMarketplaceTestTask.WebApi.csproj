@@ -21,8 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ItemMarketplaceTestTask.Service\ItemMarketplaceTestTask.Service.csproj" />
     <ProjectReference Include="..\ItemMarketplaceTestTask.Infrastructure\ItemMarketplaceTestTask.Infrastructure.csproj" />
+    <ProjectReference Include="..\ItemMarketplaceTestTask.Service\ItemMarketplaceTestTask.Service.csproj" />
   </ItemGroup>
 
 </Project>
